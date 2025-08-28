@@ -1,0 +1,86 @@
+.meal-planner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.recipes-box {
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.recipes-scroll {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.recipe-chip {
+  cursor: grab;
+  transition: all 0.2s;
+}
+.recipe-chip:hover {
+  background-color: #f1f5f9;
+  transform: scale(1.05);
+}
+
+.calendar-table {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-header th {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.calendar-table td {
+  min-width: 120px;
+  min-height: 100px;
+  vertical-align: top;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  transition: background 0.2s;
+}
+
+.calendar-table td:hover {
+  background-color: #e3f2fd;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  background: #f1f1f1;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.sticky-col-right {
+  position: sticky;
+  right: 0;
+  background: #f1f1f1;
+  z-index: 2;
+}
+
+/* ===== Saved Meal Plans Table Styling ===== */
+.table-header-secondary {
+  background: linear-gradient(90deg, #2196f3, #64b5f6);
+}
+
+
+
+.saved-plans-table .sticky-col-right {
+  position: sticky;
+  right: 0;
+  background: #e3f2fd;
+  z-index: 3;
+}
+
+/* Zebra striping */
+.saved-plans-table tr:nth-child(even) td {
+  background-color: #fafafa;
+}

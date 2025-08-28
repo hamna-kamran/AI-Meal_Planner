@@ -1,0 +1,201 @@
+/* ---------- GLOBAL THEME VARIABLES ---------- */
+/* Default (safety) */
+:root {
+  --bg-page: #f9f9f9;
+  --text-1: #222;
+  --text-2: #555;
+  --card-bg: #ffffff;
+  --border: #e2e2e2;
+  --input-bg: #ffffff;
+  --input-border: #cfcfcf;
+  --button-bg: #1976d2;
+  --button-text: #ffffff;
+}
+
+/* Light */
+html[data-theme="light"],
+body[data-theme="light"] {
+  --bg-page: #f7f8fa;
+  --text-1: #222;
+  --text-2: #666;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --button-bg: #1976d2;
+  --button-text: #ffffff;
+}
+
+/* Dim (softer than dark, high contrast text) */
+html[data-theme="dim"],
+body[data-theme="dim"] {
+  --bg-page: #16181d;
+  --text-1: #f1f5f9;
+  --text-2: #cbd5e1;
+  --card-bg: #20232a;
+  --border: #2b3038;
+  --input-bg: #1f232a;
+  --input-border: #374151;
+  --button-bg: #3b82f6;
+  --button-text: #ffffff;
+}
+
+/* Blue */
+html[data-theme="blue"],
+body[data-theme="blue"] {
+  --bg-page: #bbdefb;
+  --text-1: #0d47a1;
+  --text-2: #1565c0;
+  --card-bg: #e3f2fd;
+  --border: #90caf9;
+  --input-bg: #ffffff;
+  --input-border: #64b5f6;
+  --button-bg: #1976d2;
+  --button-text: #ffffff;
+}
+
+/* Sepia (warm, very readable) */
+html[data-theme="sepia"],
+body[data-theme="sepia"] {
+  --bg-page: #f4ecd8;
+  --text-1: #3e3727;
+  --text-2: #5b5340;
+  --card-bg: #fff8e6;
+  --border: #e5d8b9;
+  --input-bg: #fffef8;
+  --input-border: #d6c7a7;
+  --button-bg: #a06b20;
+  --button-text: #fffaf0;
+}
+
+/* Page background + base text color apply to whole app */
+html, body, #root {
+  height: 100%;
+  background: var(--bg-page);
+  color: var(--text-1);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* ---------- SETTINGS PAGE ---------- */
+
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.settings-card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--card-bg);
+  color: var(--text-1);
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.settings-title {
+  margin: 0 0 1rem 0;
+}
+
+.settings-form {
+  margin-top: 0.5rem;
+}
+
+.settings-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.settings-select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--text-1);
+  min-width: 180px;
+}
+
+.settings-select:focus {
+  outline: none;
+  border-color: var(--text-2);
+}
+
+/* Buttons */
+.btn-save {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.btn-save:hover { opacity: 0.9; }
+
+.btn-delete {
+  width: 100%;
+  padding: 0.8rem;
+  background: #d32f2f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+  margin-top: 0.75rem;
+}
+
+.btn-delete:hover { opacity: 0.9; }
+
+/* ---------- GENERIC FORM / CARD OVERRIDES (non-MUI) ---------- */
+form, .card, input, textarea, select, label, p,
+h1, h2, h3, h4, h5, h6, span, .container {
+  color: var(--text-1);
+}
+
+input, textarea, select {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text-1);
+}
+
+/* ---------- MUI OVERRIDES (so the rest of your app follows the theme) ---------- */
+.MuiPaper-root,
+.MuiCard-root {
+  background-color: var(--card-bg) !important;
+  color: var(--text-1) !important;
+  border-color: var(--border) !important;
+}
+
+.MuiTypography-root {
+  color: var(--text-1) !important;
+}
+
+.MuiButton-root {
+  color: var(--button-text) !important;
+  background-color: var(--button-bg) !important;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--input-border) !important;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--text-2) !important;
+}
+.MuiInputBase-input {
+  color: var(--text-1) !important;
+  background: var(--input-bg) !important;
+}
+.MuiFormLabel-root {
+  color: var(--text-2) !important;
+}

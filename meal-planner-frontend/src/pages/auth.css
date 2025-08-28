@@ -1,0 +1,35 @@
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+}
+
+.auth-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+.auth-card .btn {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.auth-card a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}

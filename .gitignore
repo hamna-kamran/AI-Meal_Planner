@@ -1,0 +1,79 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.env
+
+# =========================
+# Dependencies
+# =========================
+/node_modules
+meal-planner-backend/node_modules
+meal-planner-frontend/node_modules
+/.pnp
+.pnp.js
+
+# =========================
+# Build / Production
+# =========================
+/build
+meal-planner-backend/build
+meal-planner-frontend/build
+meal-planner-frontend/.next
+meal-planner-frontend/out
+
+# =========================
+# Testing
+# =========================
+/coverage
+meal-planner-backend/coverage
+meal-planner-frontend/coverage
+
+# =========================
+# Environment Files
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+meal-planner-backend/.env
+meal-planner-backend/.env.*
+meal-planner-frontend/.env
+meal-planner-frontend/.env.*
+
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# =========================
+# Misc
+# =========================
+.DS_Store
+.vscode/
+.idea/
+
