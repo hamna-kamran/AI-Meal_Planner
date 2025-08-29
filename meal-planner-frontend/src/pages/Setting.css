@@ -26,19 +26,10 @@ body[data-theme="light"] {
   --button-text: #ffffff;
 }
 
-/* Dim (softer than dark, high contrast text) */
-html[data-theme="dim"],
-body[data-theme="dim"] {
-  --bg-page: #16181d;
-  --text-1: #f1f5f9;
-  --text-2: #cbd5e1;
-  --card-bg: #20232a;
-  --border: #2b3038;
-  --input-bg: #1f232a;
-  --input-border: #374151;
-  --button-bg: #3b82f6;
-  --button-text: #ffffff;
-}
+
+
+
+
 
 /* Blue */
 html[data-theme="blue"],

@@ -53,13 +53,14 @@ export default function DashboardLayout({ children }) {
 </h5>
 
 
-        <ul className="nav flex-column">
-          <SidebarItem to="/dashboard" icon={<FaHome />} label="Dashboard" open={isSidebarOpen} />
-          <SidebarItem to="/recipes" icon={<FaClipboardList />} label="Recipes" open={isSidebarOpen} />
-          <SidebarItem to="/profile" icon={<FaUser />} label="Profile" open={isSidebarOpen} />
-          <SidebarItem to="/settings" icon={<FaCog />} label="Settings" open={isSidebarOpen} />
-          <SidebarItem to="/logout" icon={<FaSignOutAlt />} label="Logout" open={isSidebarOpen} />
-        </ul>
+        <ul className="nav flex-column text-white">
+  <SidebarItem to="/dashboard" icon={<FaHome color="white" />} label="Dashboard" open={isSidebarOpen} />
+  <SidebarItem to="/recipes" icon={<FaClipboardList color="white" />} label="Recipes" open={isSidebarOpen} />
+  <SidebarItem to="/profile" icon={<FaUser color="white" />} label="Profile" open={isSidebarOpen} />
+  <SidebarItem to="/settings" icon={<FaCog color="white" />} label="Settings" open={isSidebarOpen} />
+  <SidebarItem to="/logout" icon={<FaSignOutAlt color="white" />} label="Logout" open={isSidebarOpen} />
+</ul>
+
       </div>
 
       {/* Main Content */}

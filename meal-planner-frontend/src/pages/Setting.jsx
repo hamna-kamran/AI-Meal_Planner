@@ -177,7 +177,6 @@ function SettingsForm() {
               className="settings-select"
             >
               <option value="light">Light</option>
-              <option value="dim">Dim</option>
               <option value="blue">Blue</option>
               <option value="sepia">Sepia</option>
             </select>

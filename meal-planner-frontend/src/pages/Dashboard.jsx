@@ -87,7 +87,7 @@ export default function Dashboard() {
             }}
           >
             <Card.Body>
-              <h3 className="fw-bold">📊 Reports</h3>
+              <h3 className="fw-bold">📊 Abhi socha nai</h3>
               <p>Track your progress and meal statistics.</p>
             </Card.Body>
           </Card>
